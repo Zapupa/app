@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+.card {
+  display: flex;
+  flex-direction: row;
+  background-color: #e8f7ee;
+  border-radius: 8px;
+  width: 467px;
+  height: 116px;
+  justify-content: right;
+  gap: 60px;
+}
+
+.cardText {
+  padding-top: 12px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardTextTop {
+  color: #000;
+  font-family: "Work Sans", sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cardTextBottom {
+  display: flex;
+  flex-direction: row;
+
+  color: #000;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cardTextBottomLeft,
+.cardTextBottomRight {
+  width: 103px;
+  height: 46px;
+}
+
+.cardImg {
+  justify-content: right;
+  width: 192px;
+  height: 116px;
+  border-radius: 0px 8px 8px 0px;
+  background: lightgray 50% / cover no-repeat;
+}
