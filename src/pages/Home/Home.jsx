@@ -14,6 +14,7 @@ import {
 } from "@pbe/react-yandex-maps";
 
 const Home = ({ cityName, regionName }) => {
+  const API_KEY = "8ad44015-6f2d-4403-92cb-4daa45aff76c";
   const gorBorMapState = {
     center: [55.158574, 61.334279],
     zoom: 12,
@@ -224,7 +225,11 @@ const Home = ({ cityName, regionName }) => {
           </div>
           <div className="main_map">
             <div className="main_map_map">
-              <YMaps>
+              <YMaps
+                query={{
+                  apikey: API_KEY,
+                }}
+              >
                 <Map
                   className="main_map_map_map"
                   state={mapState}
